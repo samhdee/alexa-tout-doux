@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:600835260287:function:8afd3f9d-80df-4eaf-8e66-f4fe31e0a809:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:600835260287:function:8afd3f9d-80df-4eaf-8e66-f4fe31e0a809:Release_0"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:600835260287:function:8afd3f9d-80df-4eaf-8e66-f4fe31e0a809:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:600835260287:function:8afd3f9d-80df-4eaf-8e66-f4fe31e0a809:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "fr-FR": {
+          "description": "Connecte votre Alexa aux applications de gestion de tâches les plus populaires",
+          "examplePhrases": [
+            "Alexa, lance organisation personelle",
+          ],
+          "keywords": [],
+          "name": "Tout doux",
+          "summary": "Utilisez Alexa pour accéder à Trello, Asana, Any.Do et bien plus"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}

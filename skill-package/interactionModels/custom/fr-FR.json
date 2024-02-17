@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "list_name",
+              "elicitationRequired": false,
+              "type": "AMAZON.AlphaNumeric",
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "name": "AddListIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1553371516113"
+          }
+        },
+        {
+          "slots": [
+            {
+              "name": "list_name",
+              "elicitationRequired": false,
+              "type": "AMAZON.AlphaNumeric",
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "name": "OpenListIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.552817904934"
+          }
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "list_name",
+              "type": "AMAZON.AlphaNumeric"
+            }
+          ],
+          "name": "AddListIntent",
+          "samples": [
+            "Ajoute une liste {list_name}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "list_name",
+              "type": "AMAZON.AlphaNumeric"
+            }
+          ],
+          "name": "OpenListIntent",
+          "samples": [
+            "Ouvre la liste {list_name}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "organisation personnelle"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Voulez-vous créer la liste {list_name} ?"
+          }
+        ],
+        "id": "Confirm.Intent.1553371516113"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "J\u0027ouvre la liste {list_name} ."
+          }
+        ],
+        "id": "Confirm.Intent.552817904934"
+      }
+    ]
+  }
+}
